@@ -325,7 +325,7 @@ contract DeployCTMScript is Script, DeployCTMUtils {
         address dangerousTestOnlyForcedBeacon;
         if (config.supportL2LegacySharedBridgeTest) {
             L1AssetRouter assetRouter = L1AssetRouter(discoveredBridgehub.assetRouter);
-            (dangerousTestOnlyForcedBeacon,) = L2LegacySharedBridgeTestHelper.calculateTestL2TokenBeaconAddress(
+            (dangerousTestOnlyForcedBeacon, ) = L2LegacySharedBridgeTestHelper.calculateTestL2TokenBeaconAddress(
                 address(assetRouter.legacyBridge()),
                 discoveredBridgehub.assetRouterAddresses.l1Nullifier,
                 addresses.governance
@@ -345,8 +345,8 @@ contract DeployCTMScript is Script, DeployCTMUtils {
             messageRootBytecodeInfo: abi.encode(getL2BytecodeHash("L2MessageRoot")),
             beaconDeployerInfo: abi.encode(getL2BytecodeHash("UpgradeableBeaconDeployer")),
             chainAssetHandlerBytecodeInfo: abi.encode(getL2BytecodeHash("L2ChainAssetHandler")),
-        // For newly created chains it it is expected that the following bridges are not present at the moment
-        // of creation of the chain
+            // For newly created chains it it is expected that the following bridges are not present at the moment
+            // of creation of the chain
             l2SharedBridgeLegacyImpl: address(0),
             l2BridgedStandardERC20Impl: address(0),
             dangerousTestOnlyForcedBeacon: dangerousTestOnlyForcedBeacon

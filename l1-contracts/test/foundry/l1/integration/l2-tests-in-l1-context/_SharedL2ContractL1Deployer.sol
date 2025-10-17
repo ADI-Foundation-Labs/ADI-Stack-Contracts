@@ -63,10 +63,10 @@ contract SharedL2ContractL1Deployer is SharedL2ContractDeployer, DeployCTMIntegr
     function getChainCreationFacetCuts(
         StateTransitionDeployedAddresses memory stateTransition
     )
-    internal
-    virtual
-    override(DeployCTMIntegrationScript, DeployIntegrationUtils)
-    returns (Diamond.FacetCut[] memory)
+        internal
+        virtual
+        override(DeployCTMIntegrationScript, DeployIntegrationUtils)
+        returns (Diamond.FacetCut[] memory)
     {
         return super.getChainCreationFacetCuts(stateTransition);
     }
@@ -74,10 +74,10 @@ contract SharedL2ContractL1Deployer is SharedL2ContractDeployer, DeployCTMIntegr
     function getUpgradeAddedFacetCuts(
         StateTransitionDeployedAddresses memory stateTransition
     )
-    internal
-    virtual
-    override(DeployCTMIntegrationScript, DeployIntegrationUtils)
-    returns (Diamond.FacetCut[] memory)
+        internal
+        virtual
+        override(DeployCTMIntegrationScript, DeployIntegrationUtils)
+        returns (Diamond.FacetCut[] memory)
     {
         return super.getUpgradeAddedFacetCuts(stateTransition);
     }
