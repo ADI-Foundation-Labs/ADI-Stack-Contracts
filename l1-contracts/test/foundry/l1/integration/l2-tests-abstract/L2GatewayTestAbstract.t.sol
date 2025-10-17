@@ -18,6 +18,7 @@ import {AssetRouterBase} from "contracts/bridge/asset-router/AssetRouterBase.sol
 
 import {SharedL2ContractDeployer} from "./_SharedL2ContractDeployer.sol";
 
+import {DeployCTMUtils} from "deploy-scripts/DeployCTMUtils.s.sol";
 import {GettersFacet} from "contracts/state-transition/chain-deps/facets/Getters.sol";
 
 abstract contract L2GatewayTestAbstract is Test, SharedL2ContractDeployer {

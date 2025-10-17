@@ -18,6 +18,7 @@ import {IL2AssetRouter} from "contracts/bridge/asset-router/IL2AssetRouter.sol";
 
 import {SharedL2ContractDeployer} from "./_SharedL2ContractDeployer.sol";
 
+import {DeployCTMUtils} from "deploy-scripts/DeployCTMUtils.s.sol";
 import {TestnetERC20Token} from "contracts/dev-contracts/TestnetERC20Token.sol";
 
 abstract contract L2Erc20TestAbstract is Test, SharedL2ContractDeployer {
