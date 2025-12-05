@@ -1,9 +1,7 @@
-# ZKsync Era: Smart Contracts
+# ADI Stack: Smart Contracts
 
-ZKsync Era is a layer 2 rollup that uses zero-knowledge proofs to scale Ethereum without compromising on security or
-decentralization. Since it's EVM compatible (Solidity/Vyper), 99% of Ethereum projects can redeploy without refactoring
-or re-auditing a single line of code. ZKsync Era also uses an LLVM-based compiler that will eventually let developers
-write smart contracts in C++, Rust and other popular languages.
+ADI Stack is a layer 2 rollup that uses zero-knowledge proofs to scale Ethereum without compromising on security or
+decentralization.
 
 This repository contains both L1 and L2 ZKsync smart contracts. For their description see the
 [system overview](docs/overview.md).
