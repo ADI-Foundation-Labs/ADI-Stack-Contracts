@@ -443,7 +443,7 @@ function padStringWithZeroes(str: string, lenBytes: number): string {
 }
 
 // Returns a pair of strings:
-// - the expected pubdata commitemnt
+// - the expected pubdata commitment
 // - the required rollup l2 da hash output
 export function buildL2DARollupPubdataCommitment(stateDiffHash: string, fullPubdata: string): [string, string] {
   const BLOB_SIZE_BYTES = 126_976;
